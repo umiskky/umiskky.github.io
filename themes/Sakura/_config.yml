@@ -1,0 +1,138 @@
+# site name
+prefixName:
+siteName: UmiSkkyのBlog
+# favicon and site master avatar
+favicon: https://static.umiskky.xyz/CDN/blog/images/basic/favicon.ico
+avatar: /images/basic/avatar.jpg
+url: https://www.umiskky.xyz
+# 站点介绍（或者说是个人签名）
+description: 爱与友情以及勇气改变不了一个人，只有受伤才能让人成长。
+cdn: https://static.umiskky.xyz/CDN/blog
+pjax: 1
+# 1开启
+mathjax: 0
+
+# 站点首页的公告信息
+notice: false
+# 懒加载的加载中图片
+lazyloadImg: https://static.umiskky.xyz/CDN/blog/images/loader/orange.progress-bar-stripe-loader.svg
+
+menus:
+  首页: { path: /, fa: fa-fort-awesome faa-shake }
+  归档: { path: /archives, fa: fa-archive faa-shake, submenus: {
+    技术: {path: /categories/技术/, fa: fa-code },
+    生活: {path: /categories/生活/, fa: fa-file-text-o },
+    资源: {path: /categories/资源/, fa: fa-cloud-download },
+    随想: {path: /categories/随想/, fa: fa-commenting-o },
+    转载: {path: /categories/转载/, fa: fa-book }
+  } }
+  娱乐: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: {
+    书单: {path: /tags/悦读/, fa: fa-book faa-bounce },
+    番组: {path: /bangumi/, fa: fa-film faa-vertical },
+    歌单: {path: /music/, fa: fa-headphones },
+    图集: {path: /atlas/atlas.html, fa: fa-photo },
+    游戏: {path: /games/mikutap.html, fa: fa-gamepad }
+  } }
+  留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
+  # 友人帐: { path: /links/, fa: fa-link faa-shake }
+  # 赞赏: { path: /donate/, fa: fa-heart faa-pulse }
+  关于: { path: javascript:;, fa: fa-leaf faa-wrench , submenus: {
+    我: {path: /about/, fa: fa-meetup},
+    # 主题: {path: /theme-sakura/, fa: iconfont icon-sakura },
+    # Lab: {path: /lab/, fa: fa-cogs },
+  } }
+  # 客户端: { path: /client/, fa: fa-android faa-vertical }
+  # RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
+
+
+# Home page sort type: -1: newer first，1: older first.
+homePageSortType: -1
+# Home page article shown number)
+homeArticleShown: 10
+# 背景图片 更好的修改
+bg:
+  - https://static.umiskky.xyz/CDN/blog/images/cover/000000.webp
+  - https://static.umiskky.xyz/CDN/blog/images/cover/000001.webp
+  - https://static.umiskky.xyz/CDN/blog/images/cover/000002.webp
+  - https://static.umiskky.xyz/CDN/blog/images/cover/000003.webp
+  - https://static.umiskky.xyz/CDN/blog/images/cover/000004.webp
+  - https://static.umiskky.xyz/CDN/blog/images/cover/000005.webp
+  - https://static.umiskky.xyz/CDN/blog/images/cover/000006.webp
+  - https://static.umiskky.xyz/CDN/blog/images/cover/000007.webp
+  - https://static.umiskky.xyz/CDN/blog/images/cover/000008.webp
+
+# 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
+bgclass: filter-dot
+
+# startdash url, title, desc img
+startdash:
+  - {url: https://space.bilibili.com/483039150, title: Bilibili, desc: B站个人空间, img: /images/startdash/bilibili.jpg}
+  - {url: /, title: Temp, desc: 暂未开放, img: /images/startdash/tmp.jpg}
+#  - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: /images/startdash/sakura.md.png}
+  - {url: /, title: Tmp, desc: 暂未开放, img: /images/startdash/tmp2.jpg}
+
+# your site build time or founded date
+siteBuildingTime: 02/12/2021
+
+#social  url, img PC端配置
+social:
+  github: {url: https://github.com/umiskky, img: /images/social/github.png}
+  netease: {url: /#, img: /images/social/wangyiyun.png}
+  zhihu: {url: /#, img: /images/social/zhihu.png}
+  email: {url: /#, img: /images/social/email.svg}
+  sina: {url: /#, img: /images/social/sina.png}
+#  wechat: {url: /#, qrcode: /img/custom/wechat.jpg, img: /images/social/wechat.png}
+  # wechat2: {url: /#, qrcode: /img/custom/wechat.jpg, img: /images/social/wechat.png}
+
+#social  url, img 移动端配置
+msocial:
+  github: {url: https://github.com/umiskky, fa: fa-github, color: 333}
+  weibo: {url: /#, fa: fa-weibo, color: dd4b39}
+  qq: {url: /#, fa: fa-qq, color: 25c6fe}
+
+donate:
+  paypal: /#
+  alipay: /images/donate/AliPayQR.jpg
+  wechat: /images/donate/WeChanQR.jpg
+  wechatSQ: /images/donate/WeChanSQ.jpg
+
+movies:
+  url: https://static.umiskky.xyz/CDN/blog/video
+  # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用
+  name: The-Pet-Girl-of-Sakurasou.mp4
+
+aplayer:
+  id: 6591844856
+  server: netease
+  type: playlist
+  fixed: true
+  autoplay: false
+  loop: all
+  order: random
+  preload: auto
+  volume: 0.7
+  mutex: true
+
+# Valine
+#valine: true
+#v_appId: BaatjGvJvOy1ivKJQU9hifkY-gzGzoHsz
+#v_appKey: N6ccnwG5VD3TlOwAKQguJ7h8
+valine:
+  enable: true # if you want use valine,please set this value is true
+  master: 	E21DD27F9A334BE6 # 你邮箱的md5加密(百度md5在线加密)
+  friends: 978D9A33113BF061 # 你朋友的邮箱md5加密
+  appId: fb8EOXpBYyVGvi1uMQFu3ckS-gzGzoHsz # leancloud application app id
+  appKey: b6FdrAyk7qahBiF6t64tytlO # leancloud application app key
+  notify: true # valine mail notify (true/false) Deprecated in v1.4.0+
+  verify: false # valine verify code (true/false) Deprecated in v1.4.0+
+  pageSize: 10 # comment list page size
+  avatar: monsterid # gravatar style https://valine.js.org/#/avatar
+  lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
+  placeholder: 1723005843@qq.com #评论框占位符
+  guest_info: nick,mail,link #valine comment header info
+  recordIP: false # Record reviewer IP
+  serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+  enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
+  requiredFields: nick,mail # required fields nick/mail/link
+  bg: # valine background
+  count: true # dispaly comment count in top_img

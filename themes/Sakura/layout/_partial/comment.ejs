@@ -1,0 +1,22 @@
+<% if (theme.valine.enable && post.comments) { %>
+    <div id="vcomments"></div>
+    <script>
+        window.onload = function () {
+            var valine = new Valine();
+            valine.init({
+                el: '#vcomments',
+                master: "<%= theme.valine.master %>",
+                friends: "<%= theme.valine.friends %>",
+                appId: "<%= theme.valine.appId %>",
+                appKey: "<%= theme.valine.appKey %>",
+                placeholder: "<%= theme.valine.placeholder %>",
+                avatar: "<%= theme.valine.avatar %>",
+                pageSize: "<%= theme.valine.pageSize %>",
+                lang: "<%= theme.valine.lang %>",
+                recordIP: "<%= theme.valine.recordIP %>",
+                serverURLs: "<%= theme.valine.serverURLs %>",
+                enableQQ: "<%= theme.valine.enableQQ %>"
+            })
+        }
+    </script>
+<% } %>

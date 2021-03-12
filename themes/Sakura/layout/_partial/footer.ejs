@@ -1,0 +1,152 @@
+<footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="site-info">
+        <div class="footertext">
+            <div class="img-preload">
+                <img src="https://static.umiskky.xyz/CDN/blog/images/other/wordpress-rotating-ball-o.svg">
+                <img src="https://static.umiskky.xyz/CDN/blog/images/other/disqus-preloader.svg">
+            </div>
+        </div>
+        <div class="footer-device">
+            <p style="color: #666666;">&copy 2021</p>
+            <p style="font-family: 'Ubuntu', sans-serif;">
+                <a href="https://beian.miit.gov.cn">京ICP备2021004381号</a><br>
+                <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura"
+                                                       target="_blank"
+                                                       style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i
+                            class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i><a
+                            target="_blank"
+                            style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">UmiSkky Blog</a>
+        </span><br>
+                <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span
+                            id="busuanzi_value_site_uv"></span></span>&nbsp;
+                <span id="timeDate">载入天数...</span>
+                <span id="times">载入时分秒...</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script type="application/javascript" src="https://static.umiskky.xyz/CDN/blog/js/av-min.js"></script>
+<script type="application/javascript" src="https://static.umiskky.xyz/CDN/blog/js/lib.min.js"></script>
+<!--搜索栏-->
+<script type="application/javascript" src="https://static.umiskky.xyz/CDN/blog/js/InsightSearch.js"></script>
+<!--弹出窗口-->
+<script type="application/javascript" src="https://static.umiskky.xyz/CDN/blog/js/jquery.fancybox.min.js"></script>
+<!--图片放大-->
+<script type="application/javascript" src="https://static.umiskky.xyz/CDN/blog/js/zoom.min.js"></script>
+<!--点击复制-->
+<script type="application/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<!--主题使用的js-->
+<script type="application/javascript" src="https://static.umiskky.xyz/CDN/blog/js/sakura-app.js"></script>
+<!--新的Valine评论系统-->
+<script type="application/javascript" src='https://cdn.jsdelivr.net/gh/umiskky/Valine/dist/Valine.min.js'></script>
+<!-- 不蒜子 网页计数器 -->
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+        async="async"></script>
+<!--页面预加载-->
+<script type="application/javascript" src="https://cdn.jsdelivr.net/npm/instant.page@5.1.0/instantpage.min.js"
+        async="async"></script>
+<!--聊天机器人-->
+<script type="application/javascript" src="https://static.umiskky.xyz/CDN/blog/js/botui.js" async="async"></script>
+<!--鼠标点击特效-->
+<script type="application/javascript" src="https://static.umiskky.xyz/CDN/blog/js/mouse-click-n-tag.js"
+        async="async"></script>
+<!--live2d-->
+<script type="application/javascript" src="https://static.umiskky.xyz/CDN/other/live2d/live2d/autoload.min.js"
+        async="async"></script>
+
+<script type="text/javascript">
+    /* <![CDATA[ */
+    if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        var Poi = {
+            "pjax": "<%- theme.pjax %>",
+            "movies": {"url": "<%- theme.movies.url %>", "name": "<%- theme.movies.name %>", "live": "close"},
+            "windowheight": "fixed",
+            "codelamp": "close",
+            "ajaxurl": "",
+            "order": "asc",
+            "formpostion": "bottom"
+        };
+    } else {
+        var Poi = {
+            "pjax": "<%- theme.pjax %>",
+            "movies": {"url": "<%- theme.movies.url %>", "name": "<%- theme.movies.name %>", "live": "open"},
+            "windowheight": "auto",
+            "codelamp": "close",
+            "ajaxurl": "",
+            "order": "asc",
+            "formpostion": "bottom"
+        };
+    }
+    /* ]]> */
+
+</script>
+<script>
+    $(document).ready(function () {
+        if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
+            if ($(".pattern-center").length > 0) { //有图的情况
+                tocbot.init({
+                    // Where to render the table of contents.
+                    tocSelector: '.toc', // 放置目录的容器
+                    // Where to grab the headings to build the table of contents.
+                    contentSelector: '.entry-content', // 正文内容所在
+                    // Which headings to grab inside of the contentSelector element.
+                    scrollSmooth: true,
+                    headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+                    headingsOffset: -400,
+                    scrollSmoothOffset: -85
+                });
+            } else {
+                tocbot.init({
+                    // Where to render the table of contents.
+                    tocSelector: '.toc', // 放置目录的容器
+                    // Where to grab the headings to build the table of contents.
+                    contentSelector: '.entry-content', // 正文内容所在
+                    // Which headings to grab inside of the contentSelector element.
+                    scrollSmooth: true,
+                    headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+                    headingsOffset: -85,
+                    scrollSmoothOffset: -85
+                });
+            }
+            var offsetTop = $('.toc').offset().top - 95;
+            window.onscroll = function () {
+                var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+                if (scrollTop >= offsetTop) {
+                    $('.toc').addClass('toc-fixed');
+                } else {
+                    $('.toc').removeClass('toc-fixed');
+                }
+            }
+        }
+    });
+</script>
+
+<script>
+    var now = new Date();
+
+    function createtime() {
+        var grt = new Date("02/01/2021 00:00:00");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime() + 250);
+        days = (now - grt) / 1000 / 60 / 60 / 24;
+        dnum = Math.floor(days);
+        hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+        hnum = Math.floor(hours);
+        if (String(hnum).length == 1) {
+            hnum = "0" + hnum;
+        }
+        minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes);
+        if (String(mnum).length == 1) {
+            mnum = "0" + mnum;
+        }
+        seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds);
+        if (String(snum).length == 1) {
+            snum = "0" + snum;
+        }
+        document.getElementById("timeDate").innerHTML = "本站已运行 " + dnum + " 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+
+    setInterval("createtime()", 250);</script>

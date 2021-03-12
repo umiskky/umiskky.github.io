@@ -1,0 +1,68 @@
+<!--主题与插件开关-->
+<div class="skin-menu no-select" id="mainskin" style="position:fixed;bottom:65px;right:110px">
+    <div class="theme-controls row-container"><p
+                style="text-align:center;font-family:Monaco;font-weight:700;color:#444"><i class="fa fa-chevron-left"
+                                                                                           style="color:grey"></i>
+            background <i class="fa fa-chevron-right" style="color:grey"></i></p>
+        <ul class="menu-list">
+            <li id="white-bg"><i aria-hidden="true" class="fa fa-television"></i></li>
+            <li id="bing-bg"><i class="iconfont icon-pixiv"></i></li>
+            <li id="dark-bg"><i aria-hidden="true" class="fa fa-moon-o"></i></li>
+        </ul>
+    </div>
+    <hr>
+    <p style="text-align:center;font-family:Monaco;font-weight:700;color:#444"><i class="fa fa-chevron-left"
+                                                                                  style="color:grey"></i>
+        font <i class="fa fa-chevron-right" style="color:grey"></i></p>
+    <div class="font-family-controls row-container">
+        <button class="control-btn-serif" data-mode="serif" onclick="mashiro_global.font_control.change_font()"
+                type="button">Serif
+        </button>
+        <button class="control-btn-sans-serif unselected" data-mode="sans-serif"
+                onclick="mashiro_global.font_control.change_font()"
+                type="button">Sans Serif
+        </button>
+    </div>
+    <hr>
+    <p style="text-align:center;font-family:Monaco;font-weight:700;color:#444"><i class="fa fa-chevron-left"
+                                                                                  style="color:grey"></i>
+        scripts <i class="fa fa-chevron-right" style="color:grey"></i></p>
+    <div class="theme-controls row-container">
+        <ul class="menu-list">
+            <li id="empty-effect"><i class="fa fa-ban"></i></li>
+            <li id="sakura-rain-effect"><i class="iconfont icon-sakura"></i></li>
+            <li id="snowy-effect"><i class="fa fa-snowflake-o"></i></li>
+            <li id="lines-effect"><i class="fa fa-chevron-left"></i></li>
+            <li id="colorful-belts-effect"><i class="fa fa-map"></i></li>
+            <li id="words-rain-effect"><i class="fa fa-font"></i></li>
+            <li id="point-rain-effect"><i class="iconfont icon-dots"></i></li>
+            <li id="rain-drop-effect"><i class="fa fa-tint"></i></li>
+        </ul>
+    </div>
+    <canvas id="night-mode-cover"></canvas>
+</div>
+<div class="changeSkin-gear no-select"
+     style="background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px; visibility: visible; bottom: -999px;">
+    <div class="keys" id="setbtn">
+        <button id="open-skinMenu">
+            <style>button#open-skinMenu {
+                    transition: all .2s linear 0s;
+                    outline: 0;
+                    position: fixed;
+                    bottom: 13px;
+                    right: 100px;
+                    font-size: 16px;
+                    background-color: rgba(255, 255, 255, .95);
+                    border-radius: 20px;
+                    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .1), 0 3px 8px 0 rgba(0, 0, 0, .1)
+                }
+
+                button#open-skinMenu:hover {
+                    transition: all .2s linear 0s;
+                    background-color: #66ccff;
+                    color: rgba(255, 255, 255, 0.9)
+                }</style>
+            <i class="iconfont icon-gear inline-block rotating"></i> SCHEME TOOL | 主题特效
+        </button>
+    </div>
+</div>
