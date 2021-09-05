@@ -1,4 +1,151 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Umiskky</title><link>https://www.umiskky.xyz/</link><description>Recent content on Umiskky</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 01 Sep 2021 08:00:00 +0800</lastBuildDate><atom:link href="https://www.umiskky.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello World</title><link>https://www.umiskky.xyz/p/hello-world/</link><pubDate>Wed, 01 Sep 2021 08:00:00 +0800</pubDate><guid>https://www.umiskky.xyz/p/hello-world/</guid><description>&lt;img src="https://static.umiskky.xyz/blog/images/wallpaper/000011.png" alt="Featured image of post Hello World" />&lt;p>作为第一篇博客，就用熟悉的&lt;code>Hello World&lt;/code>作为标题吧。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Umiskky</title><link>https://www.umiskky.xyz/</link><description>Recent content on Umiskky</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 05 Sep 2021 17:20:00 +0800</lastBuildDate><atom:link href="https://www.umiskky.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>人生重开模拟器魔改</title><link>https://www.umiskky.xyz/p/%E4%BA%BA%E7%94%9F%E9%87%8D%E5%BC%80%E6%A8%A1%E6%8B%9F%E5%99%A8%E9%AD%94%E6%94%B9/</link><pubDate>Sun, 05 Sep 2021 17:20:00 +0800</pubDate><guid>https://www.umiskky.xyz/p/%E4%BA%BA%E7%94%9F%E9%87%8D%E5%BC%80%E6%A8%A1%E6%8B%9F%E5%99%A8%E9%AD%94%E6%94%B9/</guid><description>&lt;img src="https://static.umiskky.xyz/blog/images/wallpaper/000016.jpg" alt="Featured image of post 人生重开模拟器魔改" />&lt;blockquote>
+&lt;p>&lt;strong>如果人生可以重开的话，我选择开挂&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="背景">背景&lt;/h2>
+&lt;p>最近发现Github上一款比较火的小游戏，&lt;a class="link" href="http://liferestart.syaro.io/view/index.html" target="_blank" rel="noopener"
+>人生重开模拟器&lt;/a>。对于一个老非酋来说，什么胎死腹中、生了一场重病就一命呜呼了等等莫名其妙的死法都是常规操作了。&lt;/p>
+&lt;p>于是乎，开始魔改数据ing。。。&lt;/p>
+&lt;figure >
+&lt;img src="https://static.umiskky.xyz/img/20210905173048.png" width="600" />
+&lt;figcaption>
+&lt;h4>游戏界面&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;hr>
+&lt;h2 id="环境配置">环境配置&lt;/h2>
+&lt;h3 id="开发环境">开发环境&lt;/h3>
+&lt;ul>
+&lt;li>Webstorm&lt;/li>
+&lt;li>nodejs（推荐使用scoop安装nvm管理node版本）&lt;/li>
+&lt;li>git&lt;/li>
+&lt;/ul>
+&lt;h3 id="下载运行项目">下载运行项目&lt;/h3>
+&lt;p>直接使用Webstorm克隆&lt;a class="link" href="https://github.com/VickScarlet/lifeRestart.git" target="_blank" rel="noopener"
+>lifeRestart项目&lt;/a>。&lt;/p>
+&lt;p>克隆后，在终端执行命令&lt;code>npm install&lt;/code>安装依赖；每次修改后，执行命令&lt;code>npm run build&lt;/code>重新编译；执行命令&lt;code>npm run dev&lt;/code>即可在本地部署游戏。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&amp;gt; xlsx_transform@ dev D:&lt;span class="se">\W&lt;/span>orkspace&lt;span class="se">\W&lt;/span>ebstorm&lt;span class="se">\l&lt;/span>ifeRestart
+&amp;gt; webpack serve --open /view/index.html
+&amp;lt;i&amp;gt; &lt;span class="o">[&lt;/span>webpack-dev-server&lt;span class="o">]&lt;/span> Project is running at:
+&amp;lt;i&amp;gt; &lt;span class="o">[&lt;/span>webpack-dev-server&lt;span class="o">]&lt;/span> Loopback: http://localhost:8080/
+&amp;lt;i&amp;gt; &lt;span class="o">[&lt;/span>webpack-dev-server&lt;span class="o">]&lt;/span> On Your Network &lt;span class="o">(&lt;/span>IPv4&lt;span class="o">)&lt;/span>: http://10.39.103.140:8080/
+&amp;lt;i&amp;gt; &lt;span class="o">[&lt;/span>webpack-dev-server&lt;span class="o">]&lt;/span> On Your Network &lt;span class="o">(&lt;/span>IPv6&lt;span class="o">)&lt;/span>: http://&lt;span class="o">[&lt;/span>fe80::1c2b:20b8:519a:6583&lt;span class="o">]&lt;/span>:8080/
+&amp;lt;i&amp;gt; &lt;span class="o">[&lt;/span>webpack-dev-server&lt;span class="o">]&lt;/span> Content not from webpack is served from
+&lt;span class="s1">&amp;#39;D:\Workspace\Webstorm\lifeRestart\data,
+&lt;/span>&lt;span class="s1"> D:\Workspace\Webstorm\lifeRestart\public,
+&lt;/span>&lt;span class="s1"> D:\Workspace\Webstorm\lifeRestart\view&amp;#39;&lt;/span> directory
+&amp;lt;i&amp;gt; &lt;span class="o">[&lt;/span>webpack-dev-middleware&lt;span class="o">]&lt;/span> &lt;span class="nb">wait&lt;/span> &lt;span class="k">until&lt;/span> bundle finished: /view/index.html
+asset bundle.js 1.22 MiB &lt;span class="o">[&lt;/span>emitted&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>minimized&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>big&lt;span class="o">]&lt;/span> &lt;span class="o">(&lt;/span>name: main&lt;span class="o">)&lt;/span>
+...
+&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;h2 id="魔改">魔改&lt;/h2>
+&lt;h3 id="修改天赋概率">修改天赋概率&lt;/h3>
+&lt;ul>
+&lt;li>修改&lt;code>talent.js&lt;/code>代码&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript"> &lt;span class="nx">talentRandom&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">include&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="kr">const&lt;/span> &lt;span class="nx">talentList&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{};&lt;/span>
+&lt;span class="k">for&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kr">const&lt;/span> &lt;span class="nx">talentId&lt;/span> &lt;span class="k">in&lt;/span> &lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="err">#&lt;/span>&lt;span class="nx">talents&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="kr">const&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">id&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">grade&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">name&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">description&lt;/span> &lt;span class="p">}&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="err">#&lt;/span>&lt;span class="nx">talents&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">talentId&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">id&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="nx">include&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="nx">include&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">grade&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">name&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">description&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">id&lt;/span> &lt;span class="p">};&lt;/span>
+&lt;span class="k">continue&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="nx">talentList&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">grade&lt;/span>&lt;span class="p">])&lt;/span> &lt;span class="nx">talentList&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">grade&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[{&lt;/span> &lt;span class="nx">grade&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">name&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">description&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">id&lt;/span> &lt;span class="p">}];&lt;/span>
+&lt;span class="k">else&lt;/span> &lt;span class="nx">talentList&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">grade&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="nx">push&lt;/span>&lt;span class="p">({&lt;/span> &lt;span class="nx">grade&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">name&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">description&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">id&lt;/span> &lt;span class="p">});&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="k">return&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nb">Array&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="p">.&lt;/span>&lt;span class="nx">fill&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="nx">map&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="nx">v&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">i&lt;/span>&lt;span class="p">)=&amp;gt;{&lt;/span>
+&lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="nx">i&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="nx">include&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="nx">include&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="kr">const&lt;/span> &lt;span class="nx">gradeRandom&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">Math&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">random&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;span class="kd">let&lt;/span> &lt;span class="nx">grade&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="cm">/**
+&lt;/span>&lt;span class="cm"> * grade代表天赋等级，3级代表最高等级
+&lt;/span>&lt;span class="cm"> * P(grade=0) = 1-0.990
+&lt;/span>&lt;span class="cm"> * P(grade=1) = 1-0.980
+&lt;/span>&lt;span class="cm"> * P(grade=2) = 1-0.970
+&lt;/span>&lt;span class="cm"> * P(grade=3) = 0.970
+&lt;/span>&lt;span class="cm"> * 所以上面魔改使每次刷新基本必出高等级天赋（除非你太&amp;#39;欧&amp;#39;了）
+&lt;/span>&lt;span class="cm"> */&lt;/span>
+&lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">gradeRandom&lt;/span>&lt;span class="o">&amp;gt;=&lt;/span>&lt;span class="mf">0.990&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="nx">grade&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="k">else&lt;/span> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">gradeRandom&lt;/span>&lt;span class="o">&amp;gt;=&lt;/span>&lt;span class="mf">0.980&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="nx">grade&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="k">else&lt;/span> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">gradeRandom&lt;/span>&lt;span class="o">&amp;gt;=&lt;/span>&lt;span class="mf">0.970&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="nx">grade&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="k">else&lt;/span> &lt;span class="nx">grade&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">talentList&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">grade&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="nx">length&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="nx">grade&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="kr">const&lt;/span> &lt;span class="nx">length&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">talentList&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">grade&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="nx">length&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="kr">const&lt;/span> &lt;span class="nx">random&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">Math&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">floor&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">Math&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">random&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="nx">length&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">%&lt;/span> &lt;span class="nx">length&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="k">return&lt;/span> &lt;span class="nx">talentList&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">grade&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="nx">splice&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">random&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;span class="p">});&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="修改属性点">修改属性点&lt;/h3>
+&lt;ul>
+&lt;li>修改&lt;code>app.js&lt;/code>代码&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="c1">// 代码一
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="nx">talentPage&lt;/span>
+&lt;span class="p">.&lt;/span>&lt;span class="nx">find&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;#next&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="p">.&lt;/span>&lt;span class="nx">click&lt;/span>&lt;span class="p">(()=&amp;gt;{&lt;/span>
+&lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="err">#&lt;/span>&lt;span class="nx">talentSelected&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">size&lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">hint&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;请选择3个天赋&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;span class="k">return&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="c1">// 初始属性点totalMax默认20+...，这里魔改成80000+
+&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="err">#&lt;/span>&lt;span class="nx">totalMax&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">80000&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="err">#&lt;/span>&lt;span class="nx">life&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getTalentAllocationAddition&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">Array&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">from&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="err">#&lt;/span>&lt;span class="nx">talentSelected&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="nx">map&lt;/span>&lt;span class="p">(({&lt;/span>&lt;span class="nx">id&lt;/span>&lt;span class="p">})=&amp;gt;&lt;/span>&lt;span class="nx">id&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="k">switch&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;property&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;span class="p">})&lt;/span>
+&lt;span class="c1">// 代码二
+&lt;/span>&lt;span class="c1">// 这里的20000代表属性值上限，保证这些属性值上限值的和大于代码一中的totalMax值
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="nx">groups&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">CHR&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">getBtnGroups&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;颜值&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">20000&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">// 颜值 charm CHR
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="nx">groups&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">INT&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">getBtnGroups&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;智力&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">20000&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">// 智力 intelligence INT
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="nx">groups&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">STR&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">getBtnGroups&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;体质&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">20000&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">// 体质 strength STR
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="nx">groups&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">MNY&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">getBtnGroups&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;家境&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">20000&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">// 家境 money MNY
+&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="修改随机事件">修改随机事件&lt;/h3>
+&lt;ul>
+&lt;li>修改&lt;code>age.json&lt;/code>数据&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="s2">&amp;#34;315&amp;#34;&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="nt">&amp;#34;age&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;315&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="nt">&amp;#34;event&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;span class="s2">&amp;#34;10380*100&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="s2">&amp;#34;10381*100&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="s2">&amp;#34;10382*100&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="s2">&amp;#34;10383*100&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="s2">&amp;#34;10384*100&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="s2">&amp;#34;10386*10&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="s2">&amp;#34;10387*10&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="s2">&amp;#34;10388*10&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="s2">&amp;#34;10389*10&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="s2">&amp;#34;10390*10&amp;#34;&lt;/span>
+&lt;span class="p">]&lt;/span>
+&lt;span class="p">}&lt;/span>&lt;span class="err">,&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>为了保证修仙能够渡劫成功，必须触发五个事件&lt;code>你悟出了金（木水火土）之大道&lt;/code>，和任意一个事件&lt;code>你悟出了空间（时间、混沌、生命、毁灭）大道。&lt;/code>，对应事件的&lt;code>id&lt;/code>为&lt;code>10380~10384，10386~10390&lt;/code>。&lt;/p>
+&lt;p>所以，我们要做的是保证在&lt;code>300~500&lt;/code>岁之间有足够的概率触发上述事件。拿315岁举例，键&lt;code>event&lt;/code>对应的数组值代表可能触发的事件（经过条件过滤前的所有可能）,&lt;code>10380*100&lt;/code>表示id为&lt;code>10380&lt;/code>的事件发生的权重为&lt;code>100&lt;/code>。权重越大，发生概率越大，剩下的你懂了吧。&lt;/p>
+&lt;hr>
+&lt;h2 id="结果">结果&lt;/h2>
+&lt;p>必须选择的天赋为&lt;code>神秘小盒子&lt;/code>，剩下的随便选吧。&lt;/p>
+&lt;p>1
+&lt;figure >
+&lt;img src="https://static.umiskky.xyz/img/20210905202248.png" width="600" />
+&lt;figcaption>
+&lt;h4>魔改后的天赋抽卡界面&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>2
+&lt;figure >
+&lt;img src="https://static.umiskky.xyz/img/20210905203000.png" width="600" />
+&lt;figcaption>
+&lt;h4>飞升界面&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>3
+&lt;figure >
+&lt;img src="https://static.umiskky.xyz/img/20210905203115.png" width="600" />
+&lt;figcaption>
+&lt;h4>人生总结界面&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;/p></description></item><item><title>Hello World</title><link>https://www.umiskky.xyz/p/hello-world/</link><pubDate>Wed, 01 Sep 2021 08:00:00 +0800</pubDate><guid>https://www.umiskky.xyz/p/hello-world/</guid><description>&lt;img src="https://static.umiskky.xyz/blog/images/wallpaper/000011.png" alt="Featured image of post Hello World" />&lt;p>作为第一篇博客，就用熟悉的&lt;code>Hello World&lt;/code>作为标题吧。&lt;/p>
 &lt;p>嗯~ o(*￣▽￣*)o，写一些什么好呢？哎，应该不会有人看的吧。。&lt;/p>
 &lt;p>算啦，放张可耐的胡桃来结束吧( •̀ ω •́ )✧&lt;/p>
 &lt;figure >
